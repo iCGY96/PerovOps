@@ -1,0 +1,313 @@
+chemical_synonyms:
+  FAI:
+    canonical: formamidinium iodide
+    cas: 879643-74-0
+    formula: CH5IN2
+  MAI:
+    canonical: methylammonium iodide
+    cas: 14965-49-2
+    formula: CH3NH3I
+  PbI2:
+    canonical: lead iodide
+    cas: 10101-63-0
+    formula: PbI2
+  SnI2:
+    canonical: tin(II) iodide
+    cas: 10294-70-9
+    formula: SnI2
+  CsBr:
+    canonical: cesium bromide
+    cas: 7787-69-1
+    formula: CsBr
+  CsI:
+    canonical: cesium iodide
+    cas: 7789-17-5
+    formula: CsI
+  FABr:
+    canonical: formamidinium bromide
+    formula: CH5BrN2
+  MABr:
+    canonical: methylammonium bromide
+    formula: CH3NH3Br
+  GuaSCN:
+    canonical: guanidinium thiocyanate
+    cas: 593-84-0
+    formula: C2H6N4S
+  SnF2:
+    canonical: tin(II) fluoride
+    cas: 7783-47-3
+    formula: SnF2
+  PbCl2:
+    canonical: lead chloride
+    cas: 7758-95-4
+    formula: PbCl2
+  Spiro_OMeTAD:
+    canonical: 2,2',7,7'-tetrakis[N,N-di(4-methoxyphenyl)amino]-9,9'-spirobifluorene
+    cas: 207739-72-8
+    aliases:
+    - Spiro-OMeTAD
+    - spiro-MeOTAD
+  Spiro_TTB:
+    canonical: 2,2',7,7'-tetra(N,N-di-p-tolyl)amino-9,9'-spirobifluorene
+  PEDOT_PSS:
+    canonical: poly(3,4-ethylenedioxythiophene) polystyrene sulfonate
+    aliases:
+    - PEDOT:PSS
+    - PEDOT/PSS
+  PTAA:
+    canonical: poly[bis(4-phenyl)(2,4,6-trimethylphenyl)amine]
+  C60:
+    canonical: fullerene C60
+    cas: 99685-96-8
+    formula: C60
+  PCBM:
+    canonical: '[6,6]-phenyl-C61-butyric acid methyl ester'
+    cas: 160848-22-6
+  BCP:
+    canonical: bathocuproine
+    cas: 4733-39-5
+    formula: C26H20N2
+  TiO2:
+    canonical: titanium dioxide
+    cas: 13463-67-7
+    formula: TiO2
+  SnO2:
+    canonical: tin dioxide
+    cas: 18282-10-5
+    formula: SnO2
+  ZnO:
+    canonical: zinc oxide
+    cas: 1314-13-2
+    formula: ZnO
+  ITO:
+    canonical: indium tin oxide
+    composition: In2O3:SnO2 (90:10)
+  IZO:
+    canonical: indium zinc oxide
+    composition: In2O3:ZnO
+  AZO:
+    canonical: aluminum-doped zinc oxide
+    composition: ZnO:Al
+  FTO:
+    canonical: fluorine-doped tin oxide
+    composition: SnO2:F
+  Ag:
+    canonical: silver
+    cas: 7440-22-4
+  Au:
+    canonical: gold
+    cas: 7440-57-5
+  Cu:
+    canonical: copper
+    cas: 7440-50-8
+  Al:
+    canonical: aluminum
+    cas: 7429-90-5
+  MgF2:
+    canonical: magnesium fluoride
+    cas: 7783-40-6
+    formula: MgF2
+  LiF:
+    canonical: lithium fluoride
+    cas: 7789-24-4
+    formula: LiF
+  DMF:
+    canonical: dimethylformamide
+    cas: 68-12-2
+    formula: C3H7NO
+  DMSO:
+    canonical: dimethyl sulfoxide
+    cas: 67-68-5
+    formula: C2H6OS
+  NMP:
+    canonical: N-methyl-2-pyrrolidone
+    cas: 872-50-4
+  GBL:
+    canonical: gamma-butyrolactone
+    cas: 96-48-0
+  chlorobenzene:
+    canonical: chlorobenzene
+    cas: 108-90-7
+    formula: C6H5Cl
+  toluene:
+    canonical: toluene
+    cas: 108-88-3
+    formula: C7H8
+  isopropanol:
+    canonical: 2-propanol
+    cas: 67-63-0
+    formula: C3H8O
+    aliases:
+    - IPA
+    - isopropyl alcohol
+  ethanol:
+    canonical: ethanol
+    cas: 64-17-5
+    formula: C2H6O
+  acetonitrile:
+    canonical: acetonitrile
+    cas: 75-05-8
+    formula: CH3CN
+  aluminum:
+    canonical: aluminium
+  copper:
+    canonical: copper
+  lithium_fluoride:
+    canonical: lithium fluoride
+  indium_zinc_oxide:
+    canonical: indium zinc oxide
+  spiro_ttb:
+    canonical: 2,2',7,7'-tetra(N,N-di-p-tolyl)amino-9,9'-spirobifluorene
+    aliases:
+    - Spiro-TTB
+    - TTB
+  poly(3,4-ethylenedioxythiophene) polystyrene sulfonate:
+    canonical: poly(3,4-ethylenedioxythiophene) polystyrene sulfonate
+    aliases:
+    - PEDOT:PSS
+    - PEDOT_PSS
+  poly[bis(4-phenyl)(2,4,6-trimethylphenyl)amine]:
+    canonical: poly[bis(4-phenyl)(2,4,6-trimethylphenyl)amine]
+    aliases:
+    - PTAA
+  indium tin oxide:
+    canonical: indium tin oxide
+    aliases:
+    - ITO
+  2-propanol:
+    canonical: 2-propanol
+    aliases:
+    - isopropanol
+    - IPA
+  guanidinium thiocyanate:
+    canonical: guanidinium thiocyanate
+    aliases:
+    - GuaSCN
+  poly3,4-ethylenedioxythiophene polystyrene sulfonate:
+    canonical: poly(3,4-ethylenedioxythiophene) polystyrene sulfonate
+  polybis4-phenyl(2,4,6-trimethylphenyl)amine:
+    canonical: poly[bis(4-phenyl)(2,4,6-trimethylphenyl)amine]
+process_synonyms:
+  evaporation:
+  - thermal evaporation
+  - evap
+  - vacuum evaporation
+  - e-beam evaporation
+  - electron beam evaporation
+  - thermal deposition
+  sputter:
+  - sputtering
+  - RF sputtering
+  - DC sputtering
+  - magnetron sputtering
+  ALD:
+  - atomic layer deposition
+  - ALD deposition
+  spin_coat:
+  - spin coating
+  - spin-coating
+  - spin cast
+  - spin-casting
+  anneal:
+  - annealing
+  - thermal anneal
+  - heating
+  - bake
+  cleaning:
+  - UV-ozone cleaning
+  - plasma cleaning
+  - solvent cleaning
+lci_mappings:
+  ITO:
+    database: ecoinvent
+    proxy_flow: indium, at plant/GLO
+    notes: ITO not in ecoinvent; use indium as proxy scaled by composition
+  IZO:
+    database: ecoinvent
+    proxy_flow: indium, at plant/GLO
+    notes: IZO proxied by indium content
+  AZO:
+    database: ecoinvent
+    proxy_flow: zinc oxide, from bulk zinc, at regional storage/RER
+    notes: AZO proxied by ZnO
+  Spiro_OMeTAD:
+    database: ecoinvent
+    proxy_flow: organic chemicals, at plant/GLO
+    notes: Complex organic; use generic organic chemical proxy
+  C60:
+    database: ecoinvent
+    proxy_flow: carbon black, at plant/GLO
+    notes: Fullerene proxied by carbon black
+  DMF:
+    database: ecoinvent
+    exact_flow: N,N-dimethylformamide, at plant/RER
+  DMSO:
+    database: ecoinvent
+    exact_flow: dimethyl sulfoxide, at plant/RER
+  toluene:
+    database: ecoinvent
+    exact_flow: toluene, liquid, at plant/RER
+  isopropanol:
+    database: ecoinvent
+    exact_flow: isopropanol, at plant/RER
+  Ag:
+    database: ecoinvent
+    exact_flow: silver, at regional storage/RER
+  Au:
+    database: ecoinvent
+    exact_flow: gold, at regional storage/RER
+  Cu:
+    database: ecoinvent
+    exact_flow: copper, at regional storage/RER
+  electricity:
+    database: ecoinvent
+    flow_pattern: electricity, medium voltage {region}/kWh
+  aluminum:
+    database: ecoinvent
+    exact_flow: aluminium, at regional storage/RER
+  copper:
+    database: ecoinvent
+    exact_flow: copper, at regional storage/RER
+  lithium fluoride:
+    database: ecoinvent
+    proxy_flow: lithium, carbonate, at regional storage/RER
+    notes: Proxy for LiF via lithium carbonate
+  indium zinc oxide:
+    database: ecoinvent
+    proxy_flow: indium, at plant/GLO
+    notes: IZO proxied via indium feedstock
+  poly(3,4-ethylenedioxythiophene) polystyrene sulfonate:
+    database: ecoinvent
+    proxy_flow: organic chemicals, at plant/GLO
+    notes: PEDOT:PSS proxied via generic organic chemicals
+  poly[bis(4-phenyl)(2,4,6-trimethylphenyl)amine]:
+    database: ecoinvent
+    proxy_flow: organic chemicals, at plant/GLO
+    notes: PTAA proxied via generic organic chemicals
+  indium tin oxide:
+    database: ecoinvent
+    proxy_flow: indium, at plant/GLO
+    notes: ITO proxied via indium throughput
+  guanidinium thiocyanate:
+    database: ecoinvent
+    proxy_flow: guanidine, at plant/GLO
+    notes: Proxy for GuaSCN
+  2-propanol:
+    database: ecoinvent
+    proxy_flow: isopropanol, at plant/RER
+fedefl_mappings:
+  CO2:
+    flow_name: Carbon dioxide
+    context: air
+    category: air
+    unit: kg
+  NOx:
+    flow_name: Nitrogen oxides
+    context: air
+    category: air
+    unit: kg
+  VOC:
+    flow_name: Volatile organic compounds
+    context: air
+    category: air
+    unit: kg

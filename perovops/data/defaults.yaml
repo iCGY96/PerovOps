@@ -1,0 +1,210 @@
+# Language model defaults
+llm:
+  provider: openai
+  text_model: gpt-5-mini
+  embedding_model: text-embedding-3-large
+  text_temperature: 1.0
+  text_max_tokens: null
+  text_mode: direct
+  text_react_iterations: 3
+  text_react_stop_signal: "FINAL_ANSWER:"
+  text_react_feedback: |
+    Reflect on your previous response below and improve it if needed.
+    Previous response:
+    {previous_response}
+    If satisfied, reply with 'FINAL_ANSWER:' followed by the final output only.
+    Otherwise, explain your next reasoning steps before updating the answer.
+  max_context_chars: 16000
+  segment_overlap: 400
+  max_segments: 20
+  vision_provider: openai
+  vision_model: gpt-5-mini
+  vision_temperature: 1.0
+  vision_max_tokens: null
+  vision_mode: direct
+  vision_react_iterations: 2
+  vision_react_stop_signal: "FINAL_ANSWER:"
+  vision_react_feedback: |
+    Review the JSON you just produced for the image:
+    {previous_response}
+    If it is final, respond with 'FINAL_ANSWER:' followed by the JSON only.
+    Otherwise, describe your thought process briefly and provide corrected JSON.
+
+paths:
+  cache_dir: "history/.cache/perovops"
+
+agents:
+  scope:
+    runs: 1
+    parallel: true
+    mode: direct
+  process:
+    mode: direct
+  material:
+    mode: direct
+  energy:
+    mode: direct
+  ingestion:
+    mode: direct
+
+ingest:
+  markdown_filename: combined.md
+  markdown_use_llm: false
+
+# Default process intensities and material properties
+
+# Energy intensities (per m^2 functional unit)
+energy_defaults:
+  spin_coat:
+    value: 1.8
+    unit: "MJ/m^2"
+    uncertainty: 0.3  # coefficient of variation
+    source: "Manufacturing electricity demand studies"
+
+  sputter_tco:
+    value: 1.0
+    unit: "kWh/m^2"
+    min: 0.5
+    max: 1.5
+    uncertainty: 0.4
+    source: "Modern sputtering tool efficiency ranges"
+
+  evaporation_organic:
+    power: 2.0  # kW, typical tool power
+    uncertainty: 0.35
+    source: "Vendor specs (thermal evaporators)"
+
+  evaporation_metal:
+    power: 3.0  # kW
+    uncertainty: 0.3
+    source: "E-beam evaporator typical power"
+
+  ald:
+    power: 1.5  # kW average during cycle
+    cycle_time: 60  # seconds per cycle
+    uncertainty: 0.25
+    source: "ALD tool specs"
+
+  anneal:
+    # Computed from tool power × time / area
+    hotplate_power: 1.5  # kW typical
+    oven_power: 3.0  # kW
+    uncertainty: 0.2
+
+# Material properties
+densities:  # g/cm^3
+  ITO: 7.14
+  IZO: 6.4
+  AZO: 5.6
+  PEDOT_PSS: 1.0
+  Spiro_TTB: 1.2
+  Spiro_OMeTAD: 1.0
+  PbI2: 6.16
+  CsBr: 4.44
+  FAI: 2.2
+  MAI: 2.2
+  SnI2: 5.28
+  C60: 1.65
+  BCP: 1.2
+  Ag: 10.49
+  Au: 19.3
+  Cu: 8.96
+  MgF2: 3.15
+  LiF: 2.64
+  SnO2: 6.95
+  TiO2: 4.23
+  ZnO: 5.61
+  perovskite_generic: 4.0  # typical mixed perovskite
+
+  # Solvents
+  DMF: 0.944
+  DMSO: 1.092
+  chlorobenzene: 1.106
+  toluene: 0.867
+  isopropanol: 0.786
+  ethanol: 0.789
+
+# Default utilization factors
+utilization:
+  lab_equipment: 0.5  # 50% duty cycle typical in lab
+  pilot_equipment: 0.7
+  industrial: 0.85
+
+# Default coverage factors (for grid electrodes)
+coverage:
+  full_area: 1.0
+  grid_fine: 0.08  # typical Ag grid coverage
+  grid_coarse: 0.05
+
+# Solvent recovery rates
+solvent_recovery:
+  lab: 0.90
+  pilot: 0.85
+  industrial: 0.95
+  uncertainty: 0.1  # beta distribution parameter
+
+# Process-specific material utilization
+utilization_material:
+  evaporation: 0.3  # 30% typical material utilization in evaporation
+  sputter: 0.25
+  spin_coat: 0.8
+  ALD: 0.95  # high utilization
+
+# Deposition rates (nm/s) - used if not specified in paper
+deposition_rates:
+  evaporation_organic: 0.1
+  evaporation_metal: 0.5
+  sputter_ITO: 0.3
+  sputter_IZO: 0.3
+  ald_SnO2: 0.05
+  ald_TiO2: 0.05
+
+# Equipment power defaults (kW)
+equipment_power:
+  spin_coater: 0.5
+  hotplate: 1.5
+  tube_furnace: 3.0
+  glovebox: 2.0  # average consumption
+  vacuum_pump_roughing: 1.0
+  vacuum_pump_turbo: 0.8
+  sputter_tool: 5.0
+  evaporator_thermal: 2.0
+  evaporator_ebeam: 3.0
+  ald_tool: 1.5
+
+# Pedigree defaults (when data source is known)
+pedigree_defaults:
+  paper_direct:
+    reliability: 2
+    completeness: 2
+    temporal: 2
+    geographical: 3
+    technological: 2
+
+  database_match:
+    reliability: 2
+    completeness: 2
+    temporal: 3
+    geographical: 3
+    technological: 2
+
+  proxy_analogue:
+    reliability: 3
+    completeness: 3
+    temporal: 3
+    geographical: 3
+    technological: 3
+
+  heuristic:
+    reliability: 4
+    completeness: 4
+    temporal: 4
+    geographical: 4
+    technological: 4
+
+  vendor_spec:
+    reliability: 2
+    completeness: 3
+    temporal: 2
+    geographical: 3
+    technological: 2

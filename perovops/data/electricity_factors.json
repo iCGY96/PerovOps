@@ -1,0 +1,37 @@
+{
+  "US-avg": {
+    "2020": {"co2_g_per_kwh": 420.0, "source": "EPA eGRID 2020"},
+    "2022": {"co2_g_per_kwh": 398.0, "source": "EPA eGRID 2022"}
+  },
+  "US-CA": {
+    "2020": {"co2_g_per_kwh": 205.0, "source": "EPA eGRID 2020"}
+  },
+  "US-NY": {
+    "2020": {"co2_g_per_kwh": 230.0, "source": "EPA eGRID 2020"}
+  },
+  "US-TX": {
+    "2020": {"co2_g_per_kwh": 515.0, "source": "EPA eGRID 2020"}
+  },
+  "CN": {
+    "2019": {"co2_g_per_kwh": 650.0, "source": "Ember 2019"},
+    "2022": {"co2_g_per_kwh": 610.0, "source": "Ember 2022"}
+  },
+  "DE": {
+    "2020": {"co2_g_per_kwh": 366.0, "source": "Ember 2020"}
+  },
+  "FR": {
+    "2020": {"co2_g_per_kwh": 58.0, "source": "Ember 2020"}
+  },
+  "IN": {
+    "2020": {"co2_g_per_kwh": 715.0, "source": "Our World in Data 2020"}
+  },
+  "JP": {
+    "2020": {"co2_g_per_kwh": 465.0, "source": "Our World in Data 2020"}
+  },
+  "KR": {
+    "2020": {"co2_g_per_kwh": 540.0, "source": "Our World in Data 2020"}
+  },
+  "global": {
+    "2020": {"co2_g_per_kwh": 475.0, "source": "IEA 2020"}
+  }
+}
